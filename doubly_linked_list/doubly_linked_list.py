@@ -2,11 +2,26 @@
 as well as its next node in the List."""
 
 
+"""
+Luna's Notes:
+https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png
+https://www.thecodingdelight.com/doubly-linked-list/
+Why is a good idea use DLL?
+- A DLL allows us to go in both directions forward and backward
+- The delete operation in DLL is more efficient if pointer to the node to be
+    deleted is given.
+- We can quickly insert a new node before a given node
+
+Disadvantage:
+
+"""
+
+
 class ListNode:
     def __init__(self, value, prev=None, next=None):
         self.value = value
-        self.prev = prev
-        self.next = next
+        self.prev = prev # reference to previous node in DLL
+        self.next = next # reference to next node in DLL
 
     """Wrap the given value in a ListNode and insert it
     after this node. Note that this node could already
