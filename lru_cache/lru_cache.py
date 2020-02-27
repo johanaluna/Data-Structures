@@ -13,7 +13,7 @@ class LRUCache:
     """
     def __init__(self, limit=10):
         self.dll = DoublyLinkedList()
-        self.limit=limit
+        self.limit = limit
         # dictiionary: to save the key,value
         self.dict = dict()
         self.size = 0
@@ -64,7 +64,7 @@ class LRUCache:
             return
         
         # if cache is already at max capacity
-        if self.size == self.limit:
+        elif self.size == self.limit:
             # Remove the oldest entry in the cache
             del self.dict[self.dll.head.value[0]]
             # Remove the node

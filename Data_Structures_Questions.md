@@ -17,7 +17,8 @@ O(n) because we need to traverse the entire list to count each element
 O(n)
 
 2. What is the runtime complexity of `contains`?
-O(n) -- have to go through from root to the deepest leaf node.
+O(logn)
+O(n) worst scenario -- have to go through from root to the deepest leaf node.
 
 3. What is the runtime complexity of `get_max`? 
 O(n) we have to go through every node to figure out maximum
